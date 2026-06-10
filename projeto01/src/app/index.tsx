@@ -1,9 +1,16 @@
-import { Text, View, StyleSheet } from "react-native";
+import { router } from "expo-router";
+import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
+      <Text style={styles.titulo}>Home</Text>
+      <Text style={styles.subtitulo}>Bem vindo ao nosso app</Text>
+      <TouchableOpacity>
+        style={styles.button}
+        onPress={router.push('/detalhes')}
+        <Text style={styles.textoBotao}>Detalhes</Text>
+      </TouchableOpacity>
     </View>
   );
 }
