@@ -1,14 +1,14 @@
 import { useRouter } from "expo-router";
 import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 
-export default function Index() {
+export default function Detalhes() {
   const router = useRouter()
   return (
     <View style={styles.container}>
       {/*<Text style={styles.titulo}>Home</Text>
       <Text style={styles.subtitulo}> Bem vindo ao nosso APP!!!</Text>*/}
-      <TouchableOpacity style={styles.button} onPress={()=>router.push("../detalhes")}>
-        <Text style={styles.buttonText}>ir para proxima tela</Text>
+      <TouchableOpacity style={styles.button} onPress={()=>router.back("../detalhes")}>
+        <Text style={styles.buttonText}>ir para tela tela inicial</Text>
       </TouchableOpacity>
     </View>
   );
