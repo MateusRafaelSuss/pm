@@ -9,7 +9,7 @@ export default function Index() {
       <Text style={styles.subtitle}>
         Este exemplo mostra uma navegação simples em stack, com uma tela inicial e uma tela de detalhes.
       </Text> */}
-      <TouchableOpacity style={styles.button} onPress={() => router.push("./detalhes")}>
+      <TouchableOpacity style={styles.button} onPress={() => router.push("../index")}>
         <Text style={styles.buttonText}>Ir para a próxima tela</Text>
       </TouchableOpacity>
       {/* <Text style={styles.tip}>
