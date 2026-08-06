@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "projeto01",
-    "slug": "projeto01",
+    "name": "projeto001",
+    "slug": "projeto001",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "projeto01",
+    "scheme": "projeto001",
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/expo.icon"
@@ -29,10 +29,8 @@
         "expo-splash-screen",
         {
           "backgroundColor": "#208AEF",
-          "android": {
-            "image": "./assets/images/splash-icon.png",
-            "imageWidth": 76
-          }
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 76
         }
       ]
     ],
